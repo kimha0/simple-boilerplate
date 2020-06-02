@@ -26,5 +26,13 @@
       "modules": true,
       "experimentalObjectRestSpread": true
     }
-  }
+  },
+  "overrides": [
+    {
+      "files": ["postcss.config.js", "webpack.*.js"],
+      "rules": {
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+      }
+    }
+  ]
 }
